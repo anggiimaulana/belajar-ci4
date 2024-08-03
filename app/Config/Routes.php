@@ -5,8 +5,15 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+// $routes->get('/', 'Pages::index');
+// $routes->get('/komik/(:segment)', 'Komik::detail/$1');
+// $routes->get('/komik/create', 'Komik::create');
+
 $routes->get('/', 'Pages::index');
+$routes->get('/komik', 'Komik::index');
+$routes->get('/komik/create', 'Komik::create');
 $routes->get('/komik/(:segment)', 'Komik::detail/$1');
+
 
 // // nilai khusus
 // $routes->get('/coba/index', 'Coba::index');
